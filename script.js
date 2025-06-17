@@ -1,19 +1,22 @@
-// Mostrar la fecha actual
 const fecha = new Date();
+const iso = fecha.toISOString().split('T')[0];
 document.getElementById('fecha').textContent =
   fecha.toLocaleDateString('es-ES', { year:'numeric', month:'long', day:'numeric' });
 
-// Formatear fecha YYYY-MM-DD
-const iso = fecha.toISOString().split('T')[0];
-
-// API alternativa de Santo del Día (temporalmente fijo mientras encontramos API abierta)
-document.getElementById('santoTexto').textContent = 'San Gregorio Barbarigo';
-
-// Obtener versículo bíblico del día (API funcional)
-fetch('https://getdailybible.net/v1/?lang=es')
+// Cargar Santo del Día desde archivo local
+fetch('santos.json')
   .then(r => r.json())
-  .then(json => {
-    document.getElementById('evangelioTexto').textContent = json.text || 'No disponible';
+  .then(data => {
+    document.getElementById('santoTexto').textContent = data[iso] || 'No disponible';
   }).catch(_ => {
-    document.getElementById('evangelioTexto').textContent = 'Error al cargar texto bíblico';
+    document.getElementById('santoTexto').textContent = 'Error al cargar santo';
+  });
+
+// Cargar Evangelio del Día desde archivo local
+fetch('evangelios.json')
+  .then(r => r.json())
+  .then(data => {
+    document.getElementById('evangelioTexto').textContent = data[iso] || 'No disponible';
+  }).catch(_ => {
+    document.getElementById('evangelioTexto').textContent = 'Error al cargar evangelio';
   });
