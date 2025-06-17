@@ -9,10 +9,10 @@ body {
 }
 
 header {
-    background-color: #3f51b5; /* Color cambiado a azul */
+    background-color: #1565C0; /* Color cambiado a azul */
     color: white;
     padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 main {
@@ -32,7 +32,7 @@ main {
 }
 
 .menu button:hover {
-    background-color: #303f9f; /* Color de hover a azul oscuro */
+    background-color: #0D47A1; /* Color de hover a azul oscuro */
 }
 
 section {
