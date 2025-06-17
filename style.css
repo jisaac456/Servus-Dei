@@ -9,17 +9,10 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #3f51b5; /* Color cambiado a azul */
     color: white;
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-header a {
-    color: white;
-    text-decoration: none;
-    margin-top: 10px;
-    display: inline-block;
 }
 
 main {
@@ -32,14 +25,14 @@ main {
     font-size: 1.2em;
     border: none;
     border-radius: 10px;
-    background-color: #4CAF50;
+    background-color: #3f51b5; /* Color cambiado a azul */
     color: white;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .menu button:hover {
-    background-color: #45a049;
+    background-color: #303f9f; /* Color de hover a azul oscuro */
 }
 
 section {
@@ -63,12 +56,13 @@ section img {
 }
 
 footer {
-    background-color: #4CAF50;
+    background-color: #3f51b5; /* Color cambiado a azul */
     color: white;
-    padding: 10px;
+    padding: 5px; /* Footer más delgado */
     position: fixed;
     bottom: 0;
     width: 100%;
+    font-size: 0.8em; /* Texto más pequeño */
 }
 
 @media (max-width: 600px) {
