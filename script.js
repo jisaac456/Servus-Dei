@@ -7,7 +7,8 @@ document.getElementById('fecha').textContent =
 fetch('santos.json')
   .then(r => r.json())
   .then(data => {
-    document.getElementById('santoTexto').textContent = data[iso] || 'No disponible';
+    document.getElementById('santoTexto').textContent = data[iso].nombre || 'No disponible';
+    document.getElementById('santoImagen').src = data[iso].imagen || 'https://cdn-icons-png.flaticon.com/512/3176/3176365.png';
   }).catch(_ => {
     document.getElementById('santoTexto').textContent = 'Error al cargar santo';
   });
