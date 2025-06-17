@@ -15,11 +15,13 @@ fetch(`https://santodelgiorno.mintdev.me/api/santo/${iso}`)
     document.getElementById('santoTexto').textContent = 'Error al cargar santo';
   });
 
-// Obtener Evangelio (ejemplo fijo Juan 3:16)
-fetch('https://cdn.jsdelivr.net/gh/wldeh/bible-api/bibles/en-asv/books/john/chapters/3/verses/16.json')
+// Obtener Evangelio en español (lecturas evangelio.org API)
+fetch('https://api.laborde.dev/api/evangelio')
   .then(r => r.json())
   .then(json => {
-    document.getElementById('evangelioTexto').textContent = json.text;
+    document.getElementById('evangelioTexto').textContent = json.evangelio || 'No disponible';
   }).catch(_ => {
     document.getElementById('evangelioTexto').textContent = 'Error al cargar texto bíblico';
   });
+
+    
