@@ -19,20 +19,27 @@ main {
     padding: 20px;
 }
 
-.menu button {
-    margin: 20px;
-    padding: 15px 30px;
-    font-size: 1.2em;
-    border: none;
+.boton-inicio {
+    position: absolute;
+    top: 70px; /* Espacio debajo del header */
+    left: 20px; /* Pegado a la izquierda */
+    background-color: #FFA726; /* Naranja */
+    padding: 10px 15px;
     border-radius: 10px;
-    background-color: #3f51b5; /* Color cambiado a azul */
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.menu button:hover {
-    background-color: #0D47A1; /* Color de hover a azul oscuro */
+.boton-inicio button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.boton-inicio button:hover {
+    text-decoration: underline;
 }
 
 section {
