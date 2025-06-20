@@ -19,6 +19,24 @@ main {
     padding: 20px;
 }
 
+.menu button {
+    margin: 20px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 10px;
+    background-color: #1565C0; /* Azul fuerte */
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.menu button:hover {
+    background-color: #0D47A1; /* Azul más oscuro al pasar el mouse */
+}
+
 .boton-inicio {
     position: absolute;
     top: 70px; /* Espacio debajo del header */
