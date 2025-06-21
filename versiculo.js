@@ -24,8 +24,8 @@ const versiculos = [
     "1 Pedro 5:7 - Depositen en él toda ansiedad, porque él cuida de ustedes.",
     "Salmo 91:1 - El que habita al abrigo del Altísimo se acoge a la sombra del Todopoderoso.",
     "Mateo 28:20 - Yo estaré con ustedes todos los días, hasta el fin del mundo.",
-    "Juan 8:12 - Yo soy la luz del mundo; el que me sigue no andará en tinieblas."
-  "Isaías 26:3 - Al de carácter firme lo guardarás en perfecta paz, porque en ti confía.",
+    "Juan 8:12 - Yo soy la luz del mundo; el que me sigue no andará en tinieblas.",
+    "Isaías 26:3 - Al de carácter firme lo guardarás en perfecta paz, porque en ti confía.",
     "Salmo 34:8 - Gusten y vean que el Señor es bueno; dichoso el que en él se refugia.",
     "Hebreos 11:1 - La fe es la certeza de lo que se espera, la convicción de lo que no se ve.",
     "Salmo 55:22 - Encomienda al Señor tus afanes, y él te sostendrá.",
